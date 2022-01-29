@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: cornsilk;
+}
+.back-to-top {
+    width: 2rem;
+    aspect-ratio: 1;
+    cursor: pointer;
+    position: sticky;
+    left: 90%;
+    top: 95%;
+    z-index: 10;
+    filter: invert(60%) sepia(0%) saturate(13%) hue-rotate(82deg) brightness(98%) contrast(86%);
+}
+.back-to-top:hover,
+.back-to-top:focus {
+    transform: scale(1.1);
+    filter: invert(0%) sepia(91%) saturate(7428%) hue-rotate(318deg) brightness(82%) contrast(103%);
+}
+.back-to-top:active {
+    transform: scale(1);
+    filter: invert(22%) sepia(25%) saturate(5049%) hue-rotate(284deg) brightness(89%) contrast(89%);
+}
+header {
+    margin: 0 auto 2%;
+    width: 100%;
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.3), hsla(0, 0%, 50%, 0.3));
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 2px 2px 0 hsla(0, 0%, 0%, 0.2);
+    border-bottom: .5px solid hsla(0, 0%, 50%, 0.3);
+    position: relative;
+    top: -3.2vh;
+}
+.header-content {
+    width: min(calc(100% - 1em), 1500px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.logo-container {
+    width: 12rem;
+    vertical-align: middle;
+}
+.logo-container img {
+    width: 100%;
+}
+nav {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+nav li {
+    padding: 1em;
+}
+nav a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    font-family: 'Pacifico', cursive;
+    font-size: 1.3rem;
+    position: relative;
+}
+nav a:hover {
+    color: hsl(5, 82%, 36%);
+}
+nav a:active {
+    color: hsl(5, 78%, 27%);
+    top: .05em;
+    right: .05em;
+}
+main {
+    margin: 2% auto 2%;
+    display: flex;
+    flex-direction: column;
+    width: min(calc(100% - 1em), 1800px);
+}
+.border {
+    border: .8px solid hsla(0, 0%, 50%, 0.5);
+    margin: 2% auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px hsl(0, 0%, 50%);
+    background-color: white;
+}
+.section-title {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    color: hsl(0, 0%, 0%);
+    font-size: 1.8rem;
+    padding: 1em .5em;
+}
+.colors.section-content {
+    display: flex;
+    flex-direction: column;
+}
+.color {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: calc(100% - 1em);
+}
+.color-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.color h3 {
+    font-family: 'Raleway', sans-serif;
+    color: hsl(0, 0%, 0%);
+    font-size: 1.3rem;
+    padding: .5em;
+    width: min(10%, 5em);
+}
+.color-wrap p {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: .2em;
+    text-align: center;
+}
+.color-container {
+    max-width: 100%;
+    width: 35%;
+    height: 10em;
+    margin-left: .5em;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5em;
+}
+.color-container:hover {
+    transform: scale(1.02);
+    transition: transform 1000ms ease-in-out;
+}
+.red1 {
+    background-color: hsl(4, 54%, 31%);
+}
+.red2 {
+    background-color: hsl(346, 100%, 30%);
+}
+.red3 {
+    background-color: hsl(355, 57%, 45%);
+}
+.ora1 {
+    background-color: hsl(24, 90%, 84%);
+}
+.ora2 {
+    background-color: hsl(16, 98%, 58%);
+}
+.ora3 {
+    background-color: hsl(18, 86%, 39%);
+}
+.yell1 {
+    background-color: hsl(51, 100%, 87%);
+}
+.yell2 {
+    background-color: hsl(52, 100%, 50%);
+}
+.yell3 {
+    background-color: hsl(34, 43%, 49%);
+}
+.green1 {
+    background-color: hsl(70, 22%, 58%);
+}
+.green2 {
+    background-color: hsl(64, 33%, 30%);
+}
+.green3 {
+    background-color: hsl(177, 12%, 31%);
+}
+.blue1 {
+    background-color: hsl(185, 7%, 68%);
+}
+.blue2 {
+    background-color: hsl(196, 91%, 25%);
+}
+.blue3 {
+    background-color: hsl(204, 29%, 18%);
+}
+.purple1 {
+    background-color: hsl(248, 23%, 80%);
+}
+.purple2 {
+    background-color: hsl(296, 27%, 35%);
+}
+.purple3 {
+    background-color: hsl(323, 18%, 25%);
+}
+.fonts .section-content {
+    width: calc(100% - 1em);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 1% auto;
+}
+.font-title {
+    font-size: 1.8rem;
+    text-decoration: underline;
+    font-weight: 400;
+    padding: 1em;
+    padding-left: 0.5em;
+}
+.font p {
+    font-size: 1.2rem;
+    padding: .5em;
+}
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.bodoni h3, .bodoni p {
+    font-family: 'Bodoni Moda', serif;
+}
+.gill h3, .gill p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.open h3, .open p {
+    font-family: 'Open Sans', sans-serif;
+}
+.rale h3, .rale p {
+    font-family: 'Raleway', sans-serif;
+}
+.lato h3, .lato p {
+    font-family: 'Lato', sans-serif;
+}
+.paci h3, .paci p {
+    font-family: 'Pacifico', cursive;
+}
+.styles .section-content {
+    margin: 2% 0 2% 3%;
+}
+.styles .section-content h1 {
+    font-size: 2rem;
+    font-family: 'Raleway';
+    font-weight: 800;
+    margin-bottom: .5em;
+}
+.styles .section-content h2 {
+    font-size: 1.5rem;
+    font-family: 'Lato';
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+.p {
+    font-size: 1rem;
+    font-family: 'Lato';
+    font-weight: 400;
+    margin-bottom: .5em;
+}
+.styles .section-content ul {
+    margin-left: 2.2%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1900px) {
+    html {
+        font-size: 18.5px;
+    }
+}
+@media (max-width: 1900px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1500px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1000px) {
+    .color {
+        flex-direction: column;
+    }
+    .styles .section-content ul {
+        margin-left: 4%;
+    }
+}
+@media (max-width: 750px) {
+    html {
+        font-size: 14px;
+    }
+}
